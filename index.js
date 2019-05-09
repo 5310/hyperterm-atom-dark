@@ -52,7 +52,6 @@ exports.decorateConfig = config => {
         left: 0;
       }
       .tabs_list {
-        background-color: #21252b !important;
         border-bottom-color: #181a1f !important;
       }
       .splitpane_divider {
@@ -81,7 +80,7 @@ exports.decorateConfig = config => {
         left: 0;
         width: 2px;
         height: inherit;
-        background: #528bff;
+        background: #eeeeee;
         opacity: 0;
         transition: opacity .16s;
         z-index: 1;
