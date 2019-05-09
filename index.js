@@ -1,27 +1,26 @@
-
-const backgroundColor = '#282c34'
-const foregroundColor = '#abb2bf'
+const backgroundColor = '#222222cc'
+const foregroundColor = '#ababab'
 const cursorColor = foregroundColor
 const borderColor = backgroundColor
 
 const colors = {
-  black       : backgroundColor,
-  red         : '#e06c75', // red
-  green       : '#98c379', // green
-  yellow      : '#d19a66', // yellow
-  blue        : '#56b6c2', // blue
-  magenta     : '#c678dd', // pink
-  cyan        : '#56b6c2', // cyan
-  white       : '#d0d0d0', // light gray
-  lightBlack  : '#808080', // medium gray
-  lightRed    : '#e06c75', // red
-  lightGreen  : '#98c379', // green
-  lightYellow : '#d19a66', // yellow
-  lightBlue   : '#56b6c2', // blue
+  black: backgroundColor,
+  red: '#e06c75', // red
+  green: '#98c379', // green
+  yellow: '#d19a66', // yellow
+  blue: '#56b6c2', // blue
+  magenta: '#c678dd', // pink
+  cyan: '#56b6c2', // cyan
+  white: '#d0d0d0', // light gray
+  lightBlack: '#808080', // medium gray
+  lightRed: '#e06c75', // red
+  lightGreen: '#98c379', // green
+  lightYellow: '#d19a66', // yellow
+  lightBlue: '#56b6c2', // blue
   lightMagenta: '#c678dd', // pink
-  lightCyan   : '#56b6c2', // cyan
-  colorCubes  : '#ffffff', // white
-  grayscale   : foregroundColor
+  lightCyan: '#56b6c2', // cyan
+  colorCubes: '#ffffff', // white
+  grayscale: foregroundColor
 }
 
 exports.decorateConfig = config => {
@@ -42,7 +41,7 @@ exports.decorateConfig = config => {
       }
       ::-webkit-scrollbar-thumb {
         border-radius: 5px;
-        background-color: #3c424e;
+        background-color: #3c3c3c;
       }
     `,
     css: `
@@ -57,11 +56,11 @@ exports.decorateConfig = config => {
         border-bottom-color: #181a1f !important;
       }
       .splitpane_divider {
-        background-color: rgba(171, 178, 191, 0.15) !important;
+        background-color: rgba(171, 171, 171, 0.15) !important;
       }
       .tab_tab {
         font-weight: 500;
-        color: rgba(157, 165, 180, 0.6);
+        color: rgba(157, 157, 157, 0.6);
         border-width: 0 0 0 1px;
         border-image: linear-gradient(#21252b, #181a1f 1em) 0 0 0 1 stretch;
         border-style: solid;
@@ -70,7 +69,7 @@ exports.decorateConfig = config => {
         border-width: 0;
       }
       .tab_tab:hover {
-        color: rgba(157, 165, 180, 0.6);
+        color: rgba(157, 157, 157, 0.6);
         transition: none;
       }
       .tab_tab::after {
@@ -90,7 +89,7 @@ exports.decorateConfig = config => {
       .tabs_title,
       .tab_tab.tab_active {
         font-weight: 500;
-        color: #d7dae0;
+        color: #d7d7d7;
       }
       .tab_tab.tab_active {
         background-color: ${backgroundColor};
@@ -123,7 +122,7 @@ exports.decorateConfig = config => {
       }
       .tab_icon {
         display: block;
-        background: rgba(157, 165, 180, 0.6);
+        background: rgba(157, 157, 157, 0.6);
         -webkit-mask-image: url('${__dirname}/close.svg');
         mask-image: url('${__dirname}/close.svg');
         -webkit-mask-size: 7px;
@@ -145,14 +144,14 @@ exports.decorateConfig = config => {
         z-index: 2;
       }
       .tab_icon:hover {
-        background: rgba(157, 165, 180, 0.6);
+        background: rgba(165, 165, 165, 0.6);
         opacity: .7;
       }
       .tab_tab.tab_active .tab_icon {
-        background: #d7dae0;
+        background: #d7d7d7;
       }
       .tab_tab.tab_active .tab_icon:hover {
-        background: #d7dae0;
+        background: #d7d7d7;
       }
       .tab_tab:hover .tab_icon {
         transform: scale(1);
